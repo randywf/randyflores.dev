@@ -1,14 +1,19 @@
+html {
+  background: #f0f0f0;
+}
+
 body {
   width: 8.5in;
   height: 11in;
   min-width: 8.5in;
   min-height: 11in;
-  margin: 0 auto;
+  margin: 0.5rem auto;
   box-sizing: border-box;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
   background: white;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
   padding: 1rem;
   font-family: Arial, sans-serif;
 }
