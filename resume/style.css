@@ -8,8 +8,15 @@ body {
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
   background: white;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.resume-header {
+  h1 {
+    font-size: 1.2rem;
+  }
 }
 
 .horizontal-wrapper {
@@ -31,4 +38,34 @@ body {
 
 .value-label {
   font-weight: normal;
+}
+
+.resume-section {
+  h2 {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin: 0;
+  }
+  hr {
+    margin: 0;
+  }
+}
+
+.work-experience-item {}
+
+.work-experience-item-company {
+  font-size: 0.8rem;
+}
+
+.work-experience-item-title {
+  font-size: 0.8rem;
+}
+
+.work-experience-item-location {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.work-experience-item-bullets {
+  font-size: 0.8rem;
 }
