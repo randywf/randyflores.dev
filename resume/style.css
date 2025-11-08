@@ -131,6 +131,11 @@ main {
   margin: 0 0 0 -0.5rem;
 }
 
+.work-experience-item li {
+  text-align: justify;
+  margin: 0.125rem 2rem 0.125rem 0;
+}
+
 .work-experience-item-company {
   font-size: 0.8rem;
 }
@@ -150,7 +155,7 @@ main {
 
 .education-item {
   flex: 1;
-  margin: 0.25rem 0 0 1rem;
+  margin: 1rem 0 0 1rem;
 }
 
 .education-item-title {
@@ -165,7 +170,7 @@ main {
 
 .certification-item {
   flex: 1;
-  margin: 0.25rem 0 0 1rem;
+  margin: 1rem 0 1rem 1rem;
 }
 
 .certification-item-name {
@@ -178,8 +183,9 @@ main {
 }
 
 .certification-item-description {
+  text-align: justify;
   font-size: 0.8rem;
-  margin-left: 0.5rem;
+  margin: 0 2rem 0 0.5rem;
 }
 
 .language-table {
