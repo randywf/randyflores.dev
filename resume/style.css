@@ -1,0 +1,212 @@
+html {
+  background: #f0f0f0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  max-width: 210mm; /* A4 width */
+  min-height: 297mm; /* A4 height */
+  margin: 0.5rem auto;
+  box-sizing: border-box;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  background: white;
+  /* border: 1px solid black; */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  /* aspect-ratio: 210 / 297; A4 aspect ratio for screens */
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html {
+    background: white;
+  }
+  body {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0;        /* use page box margins instead */
+    padding: 10mm;    /* printable content margin */
+    box-shadow: none; /* no shadow in print */
+    background: white;
+  }
+}
+
+main {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.resume-header {
+  background: #f0f0f0;
+  margin: -1rem -1rem 0 -1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+  position: relative;
+
+  h1 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    padding-top: 3.5rem;
+  }
+}
+
+.resume-header-image {
+  img {
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.horizontal-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.key-value-label {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.key-label {
+  font-weight: bold;
+}
+
+.value-label {
+  font-weight: normal;
+}
+
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+
+  h2 {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    margin: 0.5rem 0 0 0;
+  }
+
+  hr {
+    margin: 0;
+  }
+}
+
+.work-experience-item {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.work-experience-item ul {
+  margin: 0 0 0 -0.5rem;
+}
+
+.work-experience-item-company {
+  font-size: 0.8rem;
+}
+
+.work-experience-item-title {
+  font-size: 0.8rem;
+}
+
+.work-experience-item-location {
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.work-experience-item-bullets {
+  font-size: 0.8rem;
+}
+
+.education-item {
+  flex: 1;
+  margin: 0.25rem 0 0 1rem;
+}
+
+.education-item-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.education-item-subtitle {
+  font-size: 0.8rem;
+  font-weight: light;
+}
+
+.certification-item {
+  flex: 1;
+  margin: 0.25rem 0 0 1rem;
+}
+
+.certification-item-name {
+  font-size: 0.8rem;
+  font-weight: bold;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.certification-item-description {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.language-table {
+  flex: 1;
+  font-size: 0.8rem;
+  margin: 0.25rem 0.5rem 0 0.5rem;
+
+  h3 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 1rem 0 1rem 2.5rem;
+  }
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+}
+
+.sub-level-header th {
+  font-weight: normal;
+  border-bottom: 1px solid #000;
+}
+
+.language-name {
+  font-weight: bold;
+}
+
+.language-table table col {
+  width: 16.6667%;
+}
+
+.language-table th,
+.language-table td {
+  text-align: center;
+}
