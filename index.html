@@ -5,11 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>randyflores.dev</title>
     <meta name="description" content="Personal site coming soon.">
+    <link rel="canonical" href="/resume/">
+    <meta http-equiv="refresh" content="0; url=/resume/">
   </head>
   <body>
     <main>
-      <h1>randyflores.dev</h1>
-      <p>Coming soon.</p>
+      <h1>Redirecting…</h1>
+      <p>If you are not redirected automatically, <a href="/resume/">click here</a>.</p>
+      <script>
+        (function () {
+          var target = '/resume/';
+          if (location.pathname !== '/' && location.pathname !== '/index.html') return;
+          try {
+            window.location.replace(target);
+          } catch (e) {
+            window.location.href = target;
+          }
+        })();
+      </script>
+      <noscript>
+        <meta http-equiv="refresh" content="0; url=/resume/">
+      </noscript>
     </main>
   </body>
 </html>
