@@ -1,6 +1,7 @@
 # Jekyll files
 Gemfile.lock
 _site/
+docs/.jekyll-metadata
 
 # Draft blog posts
 docs/_drafts/
