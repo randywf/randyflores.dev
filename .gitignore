@@ -2,5 +2,8 @@
 Gemfile.lock
 _site/
 
+# Draft blog posts
+docs/_drafts/
+
 # Miscellaneous files
 docs/public/headshot.xcf
