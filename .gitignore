@@ -1,2 +1,6 @@
-docs/public/headshot.xcf
+# Jekyll files
 Gemfile.lock
+_site/
+
+# Miscellaneous files
+docs/public/headshot.xcf
